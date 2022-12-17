@@ -1,3 +1,4 @@
+import { getCurrencySymbol } from "@angular/common";
 import { Component } from "@angular/core";
 
 
@@ -10,6 +11,7 @@ import { Component } from "@angular/core";
     ]
 })
 export class PracticeDatabindingComponent{
+
 
 
    username:string=""
@@ -26,4 +28,8 @@ export class PracticeDatabindingComponent{
    resetUserName(){
     this.callee();
    }
+
+   getColor(): any {
+     return this.isUserNameEmpty()?'red':'green';
+    }
 }

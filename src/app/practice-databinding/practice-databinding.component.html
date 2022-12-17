@@ -9,5 +9,23 @@
     <!--calling method with click event-->
     <button  [disabled]="isUserNameEmpty()"  class="btn btn-primary"
     (click)="resetUserName()">Add username</button> 
-    <p *ngIf="!isUserNameEmpty()">I am user: username</p>
+    <!--Below ngclass keyname with - in between is allowed only b/w '' marks else use
+    keyname without - (hyphen) as shown in next snippet-->
+    <!-- <p *ngIf="!isUserNameEmpty(); else emptyUserTemplate"
+    [ngStyle]="{ backgroundColor:getColor()}"
+    [ngClass]="{'online-tex':!isUserNameEmpty()}"  
+    >I am user: username</p>
+    -->
+    <p *ngIf="!isUserNameEmpty(); else emptyUserTemplate"
+    [ngStyle]="{ backgroundColor:getColor()}"
+    [ngClass]="{online:!isUserNameEmpty()}"  
+    >I am user: username</p>
+   
+    <!--below template is shown when else condition above is executed-->
+    <ng-template #emptyUserTemplate>
+       <p [ngStyle]="{ backgroundColor:getColor()}"
+    [ngClass]="{offline:isUserNameEmpty()}"  
+       
+       >No username exists</p>
+    </ng-template>
 </div>
