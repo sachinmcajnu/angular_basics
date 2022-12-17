@@ -9,5 +9,5 @@
     <!--calling method with click event-->
     <button  [disabled]="isUserNameEmpty()"  class="btn btn-primary"
     (click)="resetUserName()">Add username</button> 
-
+    <p *ngIf="!isUserNameEmpty()">I am user: username</p>
 </div>
