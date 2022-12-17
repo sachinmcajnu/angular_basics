@@ -6,13 +6,15 @@ import { TestComponentComponent } from './test-component/test-component.componen
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { FormsModule } from '@angular/forms';
+import { PracticeDatabindingComponent } from './practice-databinding/practicie-databinding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponentComponent,
     WarningAlertComponent,
-    SuccessAlertComponent
+    SuccessAlertComponent,
+    PracticeDatabindingComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,13 @@
+<div class="container">
+    <input type="text" name="username" [(ngModel)]="username">
+    <p>You entered : {{username}}</p>
+ 
+    <!--adding ts code in line with click event-->
+<!--    <button  [disabled]="isUserNameEmpty()"  class="btn btn-primary"
+    (click)='username=""'>Add username</button> -->
+
+    <!--calling method with click event-->
+    <button  [disabled]="isUserNameEmpty()"  class="btn btn-primary"
+    (click)="resetUserName()">Add username</button> 
+
+</div>
