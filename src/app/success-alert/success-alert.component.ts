@@ -9,7 +9,7 @@ export class SuccessAlertComponent implements OnInit {
 
   constructor() { }
    
-   value = true
+   successValue = "randomstrin"
 
   ngOnInit(): void {
   }
