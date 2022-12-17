@@ -28,4 +28,7 @@
        
        >No username exists</p>
     </ng-template>
+
+    <button class="btn btn-secondary" (click)="addFruit()">Add Fruits</button>
+    <p *ngFor="let fruit of fruits; let i = index" [innerText]="i+' '+fruit"></p>
 </div>

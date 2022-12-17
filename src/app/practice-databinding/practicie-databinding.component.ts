@@ -12,7 +12,7 @@ import { Component } from "@angular/core";
 })
 export class PracticeDatabindingComponent{
 
-
+   fruits:string[]=[]; 
 
    username:string=""
 
@@ -32,4 +32,9 @@ export class PracticeDatabindingComponent{
    getColor(): any {
      return this.isUserNameEmpty()?'red':'green';
     }
+
+   addFruit(){
+    let random = Math.random();
+    this.fruits.push(random>0.5?'apple':'banana');
+   } 
 }
