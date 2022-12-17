@@ -1,0 +1,12 @@
+<div class="container bg-dark text-white">
+  <button  (click)="toggleShow()" class="btn btn-warning">Display Details</button>
+  <p [ngClass]="{
+    hide: !isShown
+  }">Secret password</p>
+
+  <p *ngFor="let click of clicks; let i = index"
+   [ngClass]="{
+    coloredbackground: i>5
+   }"
+  >{{i}} - {{click}}</p>
+</div>

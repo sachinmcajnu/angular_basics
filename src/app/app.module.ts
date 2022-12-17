@@ -7,6 +7,7 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { FormsModule } from '@angular/forms';
 import { PracticeDatabindingComponent } from './practice-databinding/practicie-databinding.component';
+import { PracticeDirectivesComponent } from './practice-directives/practice-directives.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PracticeDatabindingComponent } from './practice-databinding/practicie-d
     TestComponentComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
-    PracticeDatabindingComponent
+    PracticeDatabindingComponent,
+    PracticeDirectivesComponent
   ],
   imports: [
     BrowserModule,
